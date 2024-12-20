@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+ main-wrap
+  product 
+ image-gallery
+  product-datails 
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.main-wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8dadc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrap .product {
+    /* width: 90%;
+    max-width: 750px;
+    display: flex; */
+
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.main-wrap .product .image-gallery {
+    flex-basis: 43%;
+    background-color: #011627;
+    box-shadow: -10px 5px 10px 10px rgb(0, 0, 0, 0.1);
+    transform: scale(1.07);
+    position: relative;
+    transition: 2s;
+    display: flex;
+    /* 
+    padding: 40px 30px 40px 40px;
+    padding: 10px; */
+    padding-bottom: 50px;
+}
+
+.main-wrap .product .image-gallery:hover {
+
+    flex-basis: 46%;
+}
+
+.main-wrap .product .image-gallery img {
+    width: 100%;
+
+    padding-top: 150px;
+    transition: .7s;
+}
+
+
+
+.main-wrap .product .image-gallery .controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.main-wrap .product .image-gallery .controls .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.7);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main-wrap .product .image-gallery .controls .btn.active {
+    background-color: #00b4d8;
+}
+
+.main-wrap .product .product-datails {
+    flex-basis: 53%;
+    background-color: #fff;
+    box-shadow: -10px 5px 10px 10px rgb(0, 0, 0, 0.1);
+    padding: 10px;
+    padding: 40px 30px 40px 40px;
+}
+
+.main-wrap .product .product-datails .datails {
+    margin-bottom: 20px;
+}
+
+.main-wrap .product .product-datails h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 10px;
+    color: #011627;
+}
+
+.main-wrap .product .product-datails .datails h3 {
+    /* color: brown; */
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 10px;
+    color: #011627;
+}
+
+.main-wrap .product .product-datails .datails h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #f72585;
+    margin-bottom: 10px;
+}
+
+.main-wrap .product .product-datails .datails p {
+    color: #011627;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.main-wrap .product .product-datails .sizes {
+    margin-bottom: 20px;
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size {
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size h3 {
+    width: 70px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #011627;
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size label {
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size label input {
+    /* color: #f72585; */
+    display: none;
+
+
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size label span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #011627;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main-wrap .product .product-datails .sizes .form .select-size label input:checked+span {
+    font-weight: 700;
+    color: #00b4d8;
+    border: solid 1px #00b4d8;
+    padding: 4px;
+    background-color: #eee9e9;
+    background-color: #011627;
+    border-radius: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*  */
+
+
+
+
+
+
+.main-wrap .product .product-datails .colors {
+    margin-bottom: 20px;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color {
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color h3 {
+    width: 70px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #011627;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color label {
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color label input {
+    display: none;
+
+
+}
+
+.main-wrap .product .product-datails .colors .form .select-color label span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.main-wrap .product .product-datails .colors .form .select-color .color-1 {
+    background-color: #d90429;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color .color-2 {
+    background-color: #38b000;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color .color-3 {
+    background-color: #0081a7;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color .color-4 {
+    background-color: #ffd100;
+}
+
+.main-wrap .product .product-datails .colors .form .select-color label input:checked+span {
+    transform: scale(.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #011627;
+}
+
+
+.main-wrap .product .product-datails .quantity {
+    margin-bottom: 50px;
+}
+
+.main-wrap .product .product-datails .quantity .select-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap .product .product-datails .quantity .select-quantity h3 {
+    width: 70px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #011627;
+}
+
+.main-wrap .product .product-datails .quantity .select-quantity input {
+    background-color: #e8e8e8;
+    width: 50px;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    border-radius: 12px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.sub-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    padding: 16px 110px;
+    /* margin-top: px; */
+
+    background-color: transparent;
+    color: #011627;
+
+
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 22px;
+    /* box-shadow: 0px 10px 10px rgba(85, 63, 240, 0.25); */
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgba(0, 0, 0, 0.199);
+    cursor: pointer;
+
+    transition: .5s linear;
+
+}
+
+.submit:hover {
+
+    background-image: linear-gradient(223deg, #011627 0 50%, #ffffffcc 50% 100%);
+    color: #ffffffcc;
+    scale: 1.05;
+}
+
+.submit:active {
+
+    background-image: linear-gradient(223deg, #01111f 0 50%, #ffffffcc 50% 100%);
+    color: #ffffffcc;
+    scale: 1.05;
+}
+
+.k {
+    color: #011627;
+}
+
+/* .submit::before {
+    content: '';
+    position: absolute;
+    left: -80%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.1);
+    transform: rotate(-45deg);
+} */
+
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+
+        width: 200%;
+        height: 100vh;
+        background-color: #a8dadc;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-wrap {
+        width: 100%;
+        height: 100vh;
+        background-color: #a8dadc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-wrap .product {
+
+
+        width: 90%;
+        max-width: 750px;
+        display: flex;
+    }
+
+    .main-wrap .product .image-gallery {
+
+        background-color: #011627;
+        box-shadow: -10px 5px 10px 10px rgb(0, 0, 0, 0.1);
+        transform: scale(1.07);
+        position: relative;
+        transition: 2s;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 46%;
+
+    }
+
+    .main-wrap .product .image-gallery:hover {
+        flex-basis: 53%;
+    }
+
+    .main-wrap .product .image-gallery img {
+        max-width: 100%;
+
+        padding-top: 150px;
+        transition: .7s;
+    }
+
+    .main-wrap .product .product-datails {
+        flex-basis: 53%;
+        background-color: #fff;
+        box-shadow: -10px 5px 10px 10px rgb(0, 0, 0, 0.1);
+
+        padding: 40px 30px 40px 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-wrap .product .product-datails .datails {
+        margin-bottom: 30px;
+    }
+
+    
+
+    .submit:hover {
+        color: #011627;
+        /* background-color: #011627; */
+        background-image: linear-gradient(223deg, #ffffffcc 0 50%, #ffffffcc 50% 100%);
+
+    }
+
+}
